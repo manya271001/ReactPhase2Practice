@@ -5,6 +5,7 @@ return(
     <>
         <p>count: {count}</p>
         <button onClick={()=>setCount(count+1)}>Increment</button>
+         <button onClick={() => count > 0 && setCount(count - 1)}>Decrement</button>
     </>
 )
 }
